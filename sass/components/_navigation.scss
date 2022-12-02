@@ -1,0 +1,52 @@
+// Part 3
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav__link {
+    display: block;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color $anim-dur $anim-function;
+    
+    &:hover,
+    &:focus {
+        color: $accent-primary-color;
+    }
+    
+}
+
+
+.nav__link--current {
+    color: $accent-primary-color;
+
+    &::after {
+        content: '';
+        
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            height: 4px;
+            width: 100%;
+            border-radius: 2px;
+            background-color: $accent-primary-color;
+    }
+}

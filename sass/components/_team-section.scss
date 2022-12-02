@@ -1,0 +1,11 @@
+// Part 7
+.team {
+    background-color: $elements-bg-color;
+
+    &__list {
+        display: flex;
+            text-align: left;
+        
+            justify-content: space-between;
+    }
+}

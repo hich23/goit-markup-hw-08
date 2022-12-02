@@ -1,0 +1,51 @@
+// Part 4
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $hero-bg-color;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero-bg-img.jpg');
+
+    background-color: $hero-bg-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__title {
+    color: #ffffff;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+    padding: 0px;
+}
+
+.button__hero {
+    padding: 10px 32px;
+    color: $primary-bg-color;
+    background-color: $accent-primary-color;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    letter-spacing: 0.06em;
+
+    transition: background-color $anim-dur $anim-function;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-secondary-color;
+        }
+}
+

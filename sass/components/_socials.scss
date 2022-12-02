@@ -1,0 +1,44 @@
+// Part 9
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.socials__item {
+    width: 44px;
+    height: 44px;
+}
+
+.socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: $icons-social;
+    width: 100%;
+    height: 100%;
+
+    transition: background-color $anim-dur $anim-function,
+        color $anim-dur $anim-function;
+
+        &:hover,
+        &:focus {
+            background-color: $accent-primary-color;
+                color: $icons-social-secondary;
+        }
+}
+
+
+.socials__item--grey-bg {
+    border-radius: 50%;
+    background-color: $icons-social-bg;
+
+    overflow: hidden;
+}
+
+.socials__link--bright {
+    color: $icons-social-secondary;
+}

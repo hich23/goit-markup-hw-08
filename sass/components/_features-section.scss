@@ -1,0 +1,34 @@
+// Part 5
+.features__list {
+    display: flex;
+    text-align: left;
+
+    justify-content: space-between;
+}
+
+.features__thumb {
+    display: block;
+    text-align: center;
+    background: $elements-bg-color;
+    padding: 25px 0px;
+    margin-bottom: 30px;
+}
+
+.features__item {
+    width: 270px;
+}
+
+.features__card-title {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.features__card-descr {
+    font-size: 14px;
+    line-height: 1.71;
+}

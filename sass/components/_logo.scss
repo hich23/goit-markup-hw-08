@@ -1,0 +1,21 @@
+// Part 2
+.logo {
+    color: $accent-primary-color;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo--dark {
+    color: $logo-color-header;
+}
+
+.logo__footer {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.logo--light {
+    color: $primary-bg-color;
+}

@@ -1,0 +1,32 @@
+// Part 12
+
+.contacts {
+    color: $contacts-footer;
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-right: 70px;
+}
+
+
+.contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.contacts__link {
+    transition: color $anim-dur $anim-function;
+
+    &:hover,
+    &:focus {
+            color: $accent-primary-color;
+    }
+}
+
+
+.contacts__link--light {
+    color: $primary-bg-color;
+
+    font-size: 14px;
+    line-height: 1.71;
+}

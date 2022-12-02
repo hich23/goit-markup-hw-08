@@ -1,0 +1,8 @@
+// Part 17
+.projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: calc(-1 * $project-item-gap);
+        margin-top: calc(-1 * $project-item-gap);
+}

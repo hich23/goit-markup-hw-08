@@ -1,0 +1,27 @@
+// Part 14
+.button--icon-right {
+    display: flex;
+    align-items: center;
+    padding: 10px 28px;
+    color: $primary-bg-color;
+    background-color: $accent-primary-color;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    letter-spacing: 0.06em;
+
+    transition: background-color $anim-dur $anim-function;
+
+        &:hover,
+        &:focus {
+                background-color: $accent-secondary-color;
+            }
+}
+
+.button__icon {
+    fill: currentColor;
+    margin-left: 10px;
+}
+

@@ -1,0 +1,55 @@
+// Part 13
+
+.subscrubing {
+    display: flex;
+}
+
+.subscrubing__field {
+    position: relative;
+    margin-right: 12px;     
+}
+
+.subscrubing__input {
+    width: 358px;
+    padding: 15px 0;
+    padding-left: 16px;
+    background-color: $footer-bg-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: $icons-social-secondary;
+    transition: border-color $anim-dur $anim-function;
+
+    &:focus {
+            outline: 0;
+                color: $icons-social-secondary;
+                border-color: $icons-social-secondary;
+                transition: border-color $anim-dur $anim-function;
+    }
+}
+
+.subscrubing__label {
+    cursor: text;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+
+    font-size: 16px;
+    line-height: 0.8;
+    letter-spacing: 3%;
+    color: rgba(255, 255, 255, 0.3);
+
+    transform: translateY(-50%);
+    transition: transform $anim-dur $anim-function,
+    color $anim-dur $anim-function;
+}
+
+.subscrubing__field:focus-within .subscrubing__label,
+.subscrubing__input:not(:placeholder-shown) +.subscrubing__label {
+    cursor: default;
+    color: $icons-social-secondary;
+    transform: translateX(-150%) translateY(-50%);
+    transition: transform $anim-dur $anim-function,
+    color $anim-dur $anim-function;
+}
+
+

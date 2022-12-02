@@ -1,0 +1,28 @@
+// Part 8
+.employee-card {
+    background-color: $primary-bg-color;
+
+    box-shadow: $box-shadow-main;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.employee-card__descr {
+    padding: 30px 0px;
+}
+
+.employee-card__name {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.employee-card__role {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 16px;
+}

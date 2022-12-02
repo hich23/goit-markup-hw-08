@@ -1,0 +1,42 @@
+// Utilits
+@import './utils/_normalize.scss';// змінні
+@import './utils/variables.scss';
+@import './utils/visually-hidden';
+
+// Base styles
+@import './base/base';
+
+// Components styles
+//  Header
+// ================================================
+@import './components/header';
+@import './components/logo';
+@import './components/navigation';
+// =================================================
+
+// Sections
+@import './components/hero-section';
+@import './components/features-section';
+@import './components/services-section';
+// ================================================
+@import './components/team-section';
+@import './components/employee-card';
+@import './components/socials';
+// ================================================
+@import './components/clients-section';
+
+// Footer
+// ================================================
+@import './components/footer';
+@import './components/contacts';
+@import './components/subscribing';
+@import './components/button-icon-right';
+
+// Modal
+@import './components/modal';
+
+// Portfolio
+// ================================================
+@import './components/filter';
+@import './components/projects-section';
+@import './components/project-card'

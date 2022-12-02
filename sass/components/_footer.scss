@@ -1,0 +1,37 @@
+// Part 11
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $footer-bg-color;
+
+  &__container {
+    display: flex;
+    text-align: left;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.footer--left-side {
+  display: flex;
+  text-align: left;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer__title {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $primary-bg-color;
+
+    margin-bottom: 20px;
+}
+
+// Тільки позиціонування блоку соцмереж, самі іконки - Part 9 _socials
+.social-block {
+    display: block;
+    width: 206px;
+}
+
