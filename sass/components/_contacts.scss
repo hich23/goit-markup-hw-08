@@ -5,13 +5,26 @@
 
     font-style: normal;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: calc(16 / 14);
+
+
+    @include respond-to ('desktop') {
     margin-right: 70px;
+    }
 }
 
 
 .contacts__item:not(:last-child) {
     margin-bottom: 9px;
+}
+
+.contacts__list {
+
+    @media screen and (max-width:1199.98px) {
+        margin-bottom: 60px;
+    }
+        
+    
 }
 
 .contacts__link {
@@ -29,4 +42,10 @@
 
     font-size: 14px;
     line-height: 1.71;
+}
+
+.adress-block {
+   @media screen and(min-width:768px) and(max-width:1199.98px) {
+        margin-right: 165px;
+    }
 }

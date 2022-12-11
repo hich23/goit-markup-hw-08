@@ -2,6 +2,7 @@
 @import './utils/_normalize.scss';// змінні
 @import './utils/variables.scss';
 @import './utils/visually-hidden';
+@import './utils/mixins';
 
 // Base styles
 @import './base/base';
@@ -12,6 +13,7 @@
 @import './components/header';
 @import './components/logo';
 @import './components/navigation';
+@import './components/mobile-menu';
 // =================================================
 
 // Sections

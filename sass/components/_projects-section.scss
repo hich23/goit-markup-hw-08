@@ -1,8 +1,21 @@
 // Part 17
 .projects__list {
-    display: flex;
+
+    @media screen and(min-width:768px) and(max-width:1199.98px) {
+        display: flex;
+            flex-wrap: wrap;
+          gap: $project-item-gap;
+
+          
+
+    }
+
+    @include respond-to ('desktop') {
+         display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin-left: calc(-1 * $project-item-gap);
         margin-top: calc(-1 * $project-item-gap);
+    }
+   
 }

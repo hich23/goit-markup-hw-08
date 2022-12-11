@@ -1,9 +1,14 @@
 // Part 5
 .features__list {
-    display: flex;
     text-align: left;
 
-    justify-content: space-between;
+
+    @include respond-to ('tablet') {
+        display: flex;
+        flex-wrap: wrap;
+        
+            justify-content: space-between;
+    }
 }
 
 .features__thumb {
@@ -15,7 +20,19 @@
 }
 
 .features__item {
-    width: 270px;
+   max-width: 450px;
+
+    @media screen and(max-width:1199.98px) {
+           margin-bottom: 30px;
+        }
+
+                @include respond-to ('tablet') {
+                    width: 354px;
+                }
+
+    @include respond-to ('desktop') {
+            width: 270px;
+        }
 }
 
 .features__card-title {
@@ -26,6 +43,10 @@
     text-transform: uppercase;
 
     margin-bottom: 10px;
+
+    @media screen and(max-width:767.98px) {
+        text-align: center;
+    }
 }
 
 .features__card-descr {

@@ -1,14 +1,26 @@
 // Part 10
 .clients__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
 .clients__item {
-    width: 170px;
+    width: 210px;
     height: 92px;
+
+    @include respond-to ('tablet') {
+        width: 226px;
+            height: 92px;
+
+    }
+
+        @include respond-to ('desktop') {
+            width: 170px;
+                height: 92px;
+        }
 }
 
 

@@ -1,0 +1,13 @@
+// Breakpoints
+$breakpoints: (
+    'phone': (min-width: 480px),
+    'tablet': (min-width: 768px),
+    'desktop': (min-width: 1200px));
+        
+@mixin respond-to($breakpoint) {
+            @if map-has-key($breakpoints, $breakpoint) {
+                @media #{inspect(map-get($breakpoints, $breakpoint))} {
+                    @content;
+                }
+            }
+        }

@@ -9,6 +9,7 @@
   opacity: 1;
   transition: opacity $anim-dur $anim-function;
   z-index: 1;
+  overflow: scroll;
 }
 
 .backdrop.is-hidden .modal {
@@ -20,14 +21,29 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 581px;
-  width: 528px;
+ max-height: 609px;
+  min-width: 320px;
   background: $primary-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform $anim-dur $anim-function;
+
+  @media screen and(max-height:608px) {
+    top: 10px;
+    transform: translateX(-50%);
+  }
+
+  @include respond-to ('phone') {
+    height: 609px;
+      width: 450px;
+  }
+
+  @include respond-to ('desktop') {
+    height: 581px;
+      width: 528px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -39,6 +55,10 @@
   display: flex;
   flex-direction: column;
   padding: 40px;
+
+  @media screen and(max-width:479px) {
+    padding: 20px;
+  }
 }
 
 .modal .description {
@@ -47,10 +67,15 @@
   font-weight: 700;
   font-style: Bold;
   font-size: 20px;
-  line-height: 0.87;
-  letter-spacing: 3%;
+  line-height: calc(30 / 20);
   color: $title-text-color;
   margin-bottom: 12px;
+
+  @include respond-to ('desktop') {
+font-size: 20px;
+  line-height: 0.87;
+  }
+
 }
 
 .form-field {
@@ -75,11 +100,15 @@
 
 .form-input {
   width: 100%;
-  padding: 12px 0px;
+  padding: 11px 0px;
   padding-left: 42px;
   border: 1px solid #21212133;
   border-radius: 4px;
   transition: border-color $anim-dur $anim-function;
+
+  @include respond-to ('desktop') {
+      padding: 12px 0px;
+  }
 }
 
 .comments {
@@ -161,11 +190,15 @@
 .agreement-text {
   font-family: Roboto;
   font-style: Regular;
-  font-size: 14px;
-  line-height: 0.58;
-  letter-spacing: 3%;
+  font-size: 12px;
+  line-height: calc(12 / 14.06);
   color: var(--main-text-color);
   user-select: none;
+
+  @include respond-to ('desktop') {
+font-size: 14px;
+  line-height: calc(24 / 14);
+  }
 }
 
 .agreement-text .agreement-link {

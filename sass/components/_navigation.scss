@@ -6,11 +6,17 @@
 
 .nav__list {
     display: flex;
-    margin-left: 93px;
+    margin-right: 96px;
+  
+    @include respond-to ('desktop') {
+            margin-left: 93px;
+            margin-right: 0px;
+        }
 }
 
 .nav__item:not(:last-child) {
     margin-right: 50px;
+
 }
 
 .nav__link {
@@ -42,7 +48,7 @@
         content: '';
         
             position: absolute;
-            bottom: -1px;
+            bottom: 0px;
             left: 0;
             height: 4px;
             width: 100%;

@@ -1,4 +1,10 @@
 // Part 6
+
+.services {
+    @media screen and(max-width:1199.98px) {
+display: none;        
+    }
+}
 .services__list {
     display: flex;
     text-align: left;

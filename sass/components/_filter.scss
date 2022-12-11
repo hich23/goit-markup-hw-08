@@ -1,9 +1,19 @@
 // Part 16
 .filter {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    flex-wrap: wrap;
     margin-bottom: 50px;
     gap: 8px;
+
+    @media screen and(max-width:767.98px)  {
+       max-width: 324px;
+        
+    }
+
+    @include respond-to ("tablet") {
+        justify-content: center;
+    }
 
     &:not(:last-child) {
         margin-right: 8px;
@@ -12,7 +22,7 @@
 
 
 .filter__button {
-    min-width: 73px;
+    min-width: 67px;
     padding: 6px 22px;
 
     color: $title-text-color;
@@ -23,7 +33,8 @@
     font-family: inherit;
     font-weight: 500;
         font-size: 16px;
-        line-height: 1.62;
+        line-height: calc(26 / 16);
+        letter-spacing: 0.03em;
 
     transition: background-color $anim-dur $anim-function,
         color $anim-dur $anim-function;
