@@ -1,13 +1,12 @@
 // Part 17
 .projects__list {
 
-    @media screen and(min-width:768px) and(max-width:1199.98px) {
+    @media screen and(max-width:1199.98px) {
         display: flex;
             flex-wrap: wrap;
           gap: $project-item-gap;
 
-          
-
+        
     }
 
     @include respond-to ('desktop') {
